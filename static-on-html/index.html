@@ -14,8 +14,16 @@
         vr-mode-ui="enabled: false"
 		embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-
-        <a-entity gps-entity-place="latitude: 44.4908615; longitude: 11.3326416;" gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" animation-mixer scale="0.15 0.15 0.15"/>
+        <a-text
+            value="IES Francisco Ayala"
+            look-at="[gps-camera]"
+            scale="80 80 80"
+            gps-entity-place="latitude: 37.19196808094803; longitude: -3.6171872654682873;"
+        ></a-text>
+        <a-box material="color: yellow" gps-entity-place="latitude: 37.19219021640692; longitude: -3.6173989106522724"/>
+        <a-entity gps-entity-place="latitude: 37.19196808094803; longitude: -3.6171872654682873;" gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" animation-mixer scale="0.15 0.15 0.15"/>
+	<a-entity gps-entity-place="latitude: 37.192440; longitude: -3.617241;" gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" animation-mixer scale="0.15 0.15 0.15"/>
+	    <a-entity gps-entity-place="latitude: 37.192121; longitude: 3.617140;" gltf-model="./assets/magnemite/scene.gltf" rotation="0 180 0" animation-mixer scale="0.15 0.15 0.15"/>
         <a-camera gps-camera rotation-reader></a-camera>
 	</a-scene>
 </body>
